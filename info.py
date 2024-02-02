@@ -69,6 +69,7 @@ AUTO_DELETE_SECONDS = int(environ.get('AUTO_DELETE_SECONDS', 1200))
 AUTO_DELETE = environ.get('AUTO_DELETE', True)
 if AUTO_DELETE == "True":
     AUTO_DELETE = True
+PING_INTERVAL = int(environ.get("PING_INTERVAL", "120"))  # 2 minutes
 
 FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', LOG_CHANNEL))
 
